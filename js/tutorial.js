@@ -24,10 +24,14 @@ function prime(eID) {
     mace.appendChild(man);
     mace.appendChild(poop);
     
-    while (num < 10000) {
+    let totprimos = prompt('Quantos primos vc quer?');
+    if (totprimos > 100) {
+        alert('Família grande eihn!!');
+    }
+
+    while (output.length < totprimos) {
         let isPrime = true;
-        // NAO TA APARECENDO O 3 !!!!!
-        for (let index = 0; index < output.length; index += 2) {
+        for (let index = 0; index < output.length; index ++) {
             const element = output[index];
     
             if ( num % element === 0 && !(element === 1)) {
@@ -65,6 +69,13 @@ function shrek(eID) {
             elem.setAttribute('src', 'img/sk1.jpg');
         }
     }
+}
+
+function Inputer(eID) {
+    let div = document.getElementById(eID);
+    div.innerHTML = null;
+    let danome = prompt('Passa o nome parça perdeu perdeu caralho')
+    div.textContent = danome
 }
 
 function clr(eID) {

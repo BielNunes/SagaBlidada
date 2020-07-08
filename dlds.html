@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deathless Dark Souls</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #title h1 {
+            margin-left: 24%;
+            text-align: center;
+            display: inline;
+        }
+        ul {
+            list-style: none;
+            font-size: 20px;
+        }
+        img{
+            max-width: 100%;
+        }
+        aside{
+            position: absolute;
+            top: 0px;
+            right: 10%;
+        }
+        a {
+            color: deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h1>Dark Souls 0 Death Run</h1>
+        <button onclick="rules('rules')">rules</button>
+        <div id="rules"></div>
+    </div>
+    <ul>
+        <li><h2>Itens, eventos, etc</h2></li>
+        <li>
+            <input type="checkbox" name="bandit" id="bandit">
+            <label for="bandit">bandit class</label>
+            <button onclick="bd('bd')">show more</button>
+            <div id="bd"></div>
+        </li>
+        <li>
+            <label for="asylum">BOSS: asylum demon</label>
+            <button onclick="asdtips('asdtips')">tips</button>
+            <div id="asdtips"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="firelink_bomb" id="firelink_bomb">
+            <label for="firelink_bomb">firelink bomb</label>
+        </li>
+        <li>
+            <input type="checkbox" name="under_elevator" id="under_elevator">
+            <label for="under_elevator">under elevator firelink</label>
+        </li>
+        <li>
+            <input type="checkbox" name="und_merch" id="und_merch">
+            <label for="und_merch">undead merchant in the parish</label>
+            <button onclick="ud('ud')">show more</button>
+            <div id="ud"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="stonedragon_soul" id="stonedragon_soul">
+            <label for="stonedragon_soul">stone dragon soul</label>
+            <button onclick="sds('sds')">show more</button>
+            <div id="sds"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="darkroot_soul" id="darkroot_soul">
+            <label for="darkroot_soul">itens em darkroot, acessivel por master key</label>
+            <button onclick="drs('drs')">show more</button>
+            <div id="drs"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="andrerc" id="andrerc">
+            <label for="andrerc">andre reinforced club +5</label>
+        </li>
+        <li>
+            <label for="bell_gargoyles">BOSS: bell gargoyles</label>
+            <button onclick="bgbtips('bgbtips')">tips</button>
+            <div id="bgbtips"></div>
+        </li>
+        <li>
+            <label for="quelaag">BOSS: quelaag</label>
+            <button onclick="qlbtips('qlbtips')">tips</button>
+            <div id="qlbtips"></div>
+        </li>
+        <li>
+            <label for="ceaseless">BOSS: ceaseless discharge</label>
+            <button onclick="cldbtips('cldbtips')">tips</button>
+            <div id="cldbtips"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="andrebup" id="andrebup">
+            <label for="andrebup">andre bow upgrade, buy crest and weapon box get 100 arrows</label>
+        </li>
+        <li>
+            <input type="checkbox" name="lus" id="lus">
+            <label for="lus">lvl up str</label>
+        </li>
+        <li>
+            <input type="checkbox" name="flip_ring" id="flip_ring">
+            <label for="flip_ring">flip ring with shivas ninja</label>
+            <button onclick="fpr('fpr')">show more</button>
+            <div id="fpr"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="mimic" id="mimic">
+            <!-- possivel symbol of avarice se vc tiver 7 lloyds -->
+            <label for="mimic">in sens fortress lloyd mimic to kill it safe</label>
+        </li>
+        <li>
+            <input type="checkbox" name="sens_top" id="sens_top">
+            <label for="sens_top">soul and tit at the top of sens fortress</label>
+            <button onclick="sfts('sfts')">show more</button>
+            <div id="sfts"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="buy_bomb" id="buy_bomb">
+            <label for="buy_bomb">buy 12 black firebomb from tarkus to ???</label>
+        </li>
+        <li>
+            <label for="iron_golem">BOSS: iron golem</label>
+            <button onclick="igbtips('igbtips')">tips</button>
+            <div id="igbtips"></div>
+        </li>
+        <li>
+            <input type="checkbox" name="kill_giants" id="kill_giants">
+            <label for="kill_giants">in anor londo kill giants to get crystal halberd, use bow to be safe and lloyd</label>
+        </li>
+        <li>
+            <input type="checkbox" name="lud" id="lud">
+            <label for="lud">lvl up dex (crystal halb +1), end, vit</label>
+        </li>
+        <li>
+            <input type="checkbox" name="paint_room" id="paint_room">
+            <label for="paint_room">bait painting room guardians with bow and kill them safe</label>
+            <button onclick="prgk('prgk')">show more</button>
+            <div id="prgk"></div>
+        </li>
+    </ul>
+    <aside>
+        <ul>
+            <li><h1>Bosses</h1></li>
+            <li>
+                <input type="checkbox" name="asylum" id="asylum">
+                <label for="asylum">asylum demon</label>
+            </li>
+            <li>
+                <input type="checkbox" name="bell_gargoyles" id="bell_gargoyles">
+                <label for="bell_gargoyles">bell gargoyles</label>
+            </li>
+            <li>
+                <input type="checkbox" name="quelaag" id="quelaag">
+                <label for="quelaag">quelaag</label>
+            </li>
+            <li>
+                <input type="checkbox" name="ceaseless" id="ceaseless">
+                <label for="ceaseless">ceaseless discharge</label>
+            </li>
+            <li>
+                <input type="checkbox" name="iron_golem" id="iron_golem">
+                <label for="iron_golem">iron golem</label>
+            </li>
+            <li>
+                <input type="checkbox" name="ons" id="ons">
+                <label for="ons">Ornstein-Smough</label>
+            </li>
+            <li>
+                <input type="checkbox" name="sif" id="sif">
+                <label for="sif">sif</label>
+            </li>
+            <li>
+                <input type="checkbox" name="pinwheel" id="pinwheel">
+                <label for="pinwheel">pinwheel</label>
+            </li>
+            <li>
+                <input type="checkbox" name="nito" id="nito">
+                <label for="nito">nito</label>
+            </li>
+            <li>
+                <input type="checkbox" name="4kings" id="4kings">
+                <label for="4kings">4 kings</label>
+            </li>
+            <li>
+                <input type="checkbox" name="seath" id="seath">
+                <label for="seath">seath</label>
+            </li>
+            <li>
+                <input type="checkbox" name="bedchaos" id="bedchaos">
+                <label for="bedchaos">bed of chaos</label>
+            </li>
+            <li>
+                <input type="checkbox" name="gwyn" id="gwyn">
+                <label for="gwyn">gwyn</label>
+            </li>
+        </ul>
+    </aside>
+    <a href="index.html">back to index</a>
+    <script src="js/darksouls.js"></script>
+</body>
+</html>
