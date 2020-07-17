@@ -34,6 +34,10 @@
         img{
             max-width: 100%;
         }
+        button {
+          padding: 4px 8px;
+          font-size: 16px;
+        }
         aside{
             position: absolute;
             top: -10px;
@@ -113,6 +117,8 @@
                 <li>
                     <input type="checkbox" name="andrebup" id="andrebup">
                     <label for="andrebup">andre bow upgrade, buy crest and weapon box get 100 arrows</label>
+                    <button onclick="bucwb('bucwb')">tips</button>
+                    <div id="bucwb"></div>
                 </li>
                 <li>
                     <input type="checkbox" name="lus" id="lus">
@@ -147,6 +153,8 @@
                 <li>
                     <input type="checkbox" name="kill_giants" id="kill_giants">
                     <label for="kill_giants">in anor londo kill giants to get crystal halberd, use bow to be safe and lloyd</label>
+                    <button onclick="alkg('alkg')">tips</button>
+                    <div id="alkg"></div>
                 </li>
                 <li>
                     <input type="checkbox" name="lud" id="lud">
@@ -157,6 +165,147 @@
                     <label for="paint_room">bait painting room guardians with bow and kill them safe</label>
                     <button onclick="prgk('prgk')">show more</button>
                     <div id="prgk"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="hardest_part" id="hardest_part">
+                    <label for="hardest_part">run for your life</label>
+                    <button onclick="rfyl('rfyl')">show more</button>
+                    <div id="rfyl"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="silver_archers" id="silver_archers">
+                    <label for="silver_archers">survive the silver archers</label>
+                    <button onclick="stsa('stsa')">show more</button>
+                    <div id="stsa"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="inside_castle" id="inside_castle">
+                    <label for="inside_castle">inside the castle</label>
+                    <button onclick="itc('itc')">show more</button>
+                    <div id="itc"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="giant_smith" id="giant_smith">
+                    <label for="giant_smith">deal with the giant smith</label>
+                    <button onclick="kgs('kgs')">show more</button>
+                    <div id="kgs"></div>
+                </li>
+                <li>
+                    <label for="ons">BOSS: Ornstein-Smough</label>
+                    <button onclick="onstips('onstips')">tips</button>
+                    <div id="onstips"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="amazing_chest" id="amazing_chest">
+                    <label for="amazing_chest">amazing chest ahead</label>
+                    <button onclick="ach('ach')">show more</button>
+                    <div id="ach"></div>
+                </li>
+                <li>
+                    <label for="sif">BOSS: Sif</label>
+                    <button onclick="siftips('siftips')">tips</button>
+                    <div id="siftips"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="sleep_ring" id="sleep_ring">
+                    <label for="sleep_ring">dragon sleep ring</label>
+                    <button onclick="dsr('dsr')">show more</button>
+                    <div id="dsr"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="back_firelink" id="back_firelink">
+                    <label for="back_firelink">back to firelink</label>
+                    <button onclick="btfl('btfl')">show more</button>
+                    <div id="btfl"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="catacombs_skip" id="catacombs_skip">
+                    <label for="catacombs_skip">catacombs skip</label>
+                    <button onclick="ccs('ccs')">show more</button>
+                    <div id="ccs"></div>
+                </li>
+                <li>
+                    <label for="pinwheel">BOSS: pinwheel</label>
+                    <button onclick="pwbtips('pwbtips')">tips</button>
+                    <div id="pwbtips"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="spook" id="spook">
+                    <label for="spook">spooky scary skeletons</label>
+                    <button onclick="sss('sss')">show more</button>
+                    <div id="sss"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="patches" id="patches">
+                    <label for="patches">best friend patches</label>
+                    <button onclick="bffp('bffp')">show more</button>
+                    <div id="bffp"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="nitos_way" id="nitos_way">
+                    <label for="nitos_way">way to nito</label>
+                    <button onclick="wtn('wtn')">show more</button>
+                    <div id="wtn"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="cave" id="cave">
+                    <label for="cave">dark cave</label>
+                    <button onclick="cave('cave')">show more</button>
+                    <div id="cave"></div>
+                </li>
+                <li>
+                    <label for="nito">BOSS: nito</label>
+                    <button onclick="nitotips('nitotips')">tips</button>
+                    <div id="nitotips"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="comfy_bonfy" id="comfy_bonfy">
+                    <label for="comfy_bonfy">upe martelo e dex/str se der na firelink</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="new_londo" id="new_londo">
+                    <label for="new_londo">new londo ruins</label>
+                    <button onclick="nlr('nlr')">show more</button>
+                    <div id="nlr"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="deflood" id="deflood">
+                    <label for="deflood">deflood the house</label>
+                    <button onclick="dfth('dfth')">show more</button>
+                    <div id="dfth"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="king_road" id="king_road">
+                    <label for="king_road">kings' road</label>
+                    <button onclick="ksr('ksr')">show more</button>
+                    <div id="ksr"></div>
+                </li>
+                <li>
+                    <label for="4kings">BOSS: 4 kings</label>
+                    <button onclick="kingstips('kingstips')">tips</button>
+                    <div id="kingstips"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="archives" id="archives">
+                    <label for="archives">entering the archives</label>
+                    <button onclick="eta('eta')">show more</button>
+                    <div id="eta"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="dukes_archives" id="dukes_archives">
+                    <label for="dukes_archives">duke's archives</label>
+                    <button onclick="dukes('dukes')">show more</button>
+                    <div id="dukes"></div>
+                </li>
+                <li>
+                    <input type="checkbox" name="death" id="death">
+                    <label for="death">die</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="jail_break" id="jail_break">
+                    <label for="jail_break">jail break</label>
+                    <button onclick="jlbk('jlbk')">show more</button>
+                    <div id="jlbk"></div>
                 </li>
             </ul>
         </div>
