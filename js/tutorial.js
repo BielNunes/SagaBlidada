@@ -78,6 +78,14 @@ function Inputer(eID) {
     div.textContent = danome
 }
 
+function dcm(eID) {
+    let elem = document.createElement('h1');
+    let div = document.getElementById(eID);
+    let num = Number(div.innerHTML);
+    div.appendChild(elem);
+    elem.innerHTML = num.toFixed(1);
+}
+
 function clr(eID) {
     let div = document.getElementById(eID);
     div.innerHTML = null;
