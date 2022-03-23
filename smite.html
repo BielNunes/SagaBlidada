@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smite Random God Generator</title>
-    <style>
-        body {
-            background: url(../img/smitegods.png);
-            color: chartreuse;
-        };
-    </style>
+    <link rel="stylesheet" href="css/smite_style.css">
 </head>
 <body>
     <div style="display: inline;">
         <a href="index.html">back to index</a><br>
-        <button onclick="smt('writter')">Click pra escolher seu GOD</button>
+        <button class="cybr-btn" onclick="smt('writter1')">
+            Click pra escolher 1 GOD<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">Cyber_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+          </button>
+          <button class="cybr-btn" onclick="smt('writter1'); smt('writter2'); smt('writter3')">
+            Click pra escolher dentre 3 GODs<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">Buttons_</span>
+            <span aria-hidden class="cybr-btn__tag">R25</span>
+          </button>
     </div>
 
-    <div id="writter">7.8234</div>
+    <div id="writter1"></div>
+    <div id="writter2"></div>
+    <div id="writter3"></div>
 
     <script src="js/god.js"></script>
 </body>
